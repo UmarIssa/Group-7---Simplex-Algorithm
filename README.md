@@ -35,6 +35,7 @@ This program implements the Simplex Algorithm to solve a linear programming prob
 ---
 
 1. Input Handling
+---
 Code snippet
 int numVariables, numConstraints;
 cout << "Enter the number of variables: ";
@@ -45,7 +46,7 @@ cin >> numConstraints;
 • Example: For x1 and x2 , i.e numVariables = 2.
 
 
-2. Simplex Table Construction
+3. Simplex Table Construction
 Code snippet
 vector<vector<double>> table(numConstraints + 1, vector<double>(numVariables + numConstraints + 1, 0));
  
@@ -56,7 +57,7 @@ This creates a 2D matrix (Simplex Table) to store:
  
  
  
-3. Fill the Table
+4. Fill the Table
 Code snippet
 for (int i = 0; i < numConstraints; i++) {
    for (int j = 0; j <= numVariables; j++) {
@@ -74,7 +75,7 @@ for (int j = 1; j <= numVariables; j++) {
 }
 • Input the objective function coefficients and store them in the last row (negated to suit the Simplex method).
  
-4. Printing the Table
+5. Printing the Table
 Code snippet
 void printTable(const vector<vector<double>>& table) {
    for (const auto& row : table) {
@@ -90,7 +91,7 @@ void printTable(const vector<vector<double>>& table) {
  
  
  
-5. Finding the Pivot Column
+6. Finding the Pivot Column
 Code Snippet
 int findPivotColumn(const vector<vector<double>>& table) {
    int pivotColumn = -1;
@@ -105,7 +106,7 @@ int findPivotColumn(const vector<vector<double>>& table) {
 }
 • The pivot column is the one with the most negative value in the last row (objective function). This indicates which variable can improve the solution.
  
-6. Finding the Pivot Row
+7. Finding the Pivot Row
 Code snippet
 int findPivotRow(const vector<vector<double>>& table, intpivotColumn) {
    int pivotRow = -1;
@@ -129,7 +130,7 @@ int findPivotRow(const vector<vector<double>>& table, intpivotColumn) {
  
  
  
-7. Performing Pivoting
+8. Performing Pivoting
 Code snippet
 void performPivoting(vector<vector<double>>& table, intpivotRow, int pivotColumn) {
    double pivotValue = table[pivotRow][pivotColumn];
@@ -147,7 +148,7 @@ void performPivoting(vector<vector<double>>& table, intpivotRow, int pivotColumn
    }
 }
 • This step normalizes the pivot row and adjusts the other rows to make the pivot column a unit column (Gaussian elimination).
-8. Simplex Iterations
+9. Simplex Iterations
 Code snippet
 void simplex(vector<vector<double>>& table) {
    while (true) {
