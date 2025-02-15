@@ -35,7 +35,7 @@ This program implements the Simplex Algorithm to solve a linear programming prob
 ---
 
 1. Input Handling
----
+--
 Code snippet
 int numVariables, numConstraints;
 cout << "Enter the number of variables: ";
