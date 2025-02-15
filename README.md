@@ -25,6 +25,7 @@ https://github.com/Big-Major/Group-7---Simplex-algorithm-
 U22CS1068
 jerry
 https://github.com/U22cs1068/Group-7-Simplex-Algorithm-
+
 ---
 
 This program lets you input the number of variables and constraints, followed by the coefficients of the constraints (including the right-hand side) and the objective function. It then performs the Simplex Algorithm to find the optimal solution.
