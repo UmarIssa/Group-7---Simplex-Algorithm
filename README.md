@@ -11,6 +11,8 @@ cout << "Enter the number of constraints: ";
 cin >> numConstraints;
 • The user specifies the number of decision variables and constraints.
 • Example: For x1 and x2 , i.e numVariables = 2.
+
+
 2. Simplex Table Construction
 Code snippet
 vector<vector<double>> table(numConstraints + 1, vector<double>(numVariables + numConstraints + 1, 0));
