@@ -31,6 +31,9 @@ https://github.com/U22cs1068/Group-7-Simplex-Algorithm-
 This program lets you input the number of variables and constraints, followed by the coefficients of the constraints (including the right-hand side) and the objective function. It then performs the Simplex Algorithm to find the optimal solution.
 Purpose of the Code
 This program implements the Simplex Algorithm to solve a linear programming problem. It finds the maximum value of an objective function.
+
+---
+
 1. Input Handling
 Code snippet
 int numVariables, numConstraints;
