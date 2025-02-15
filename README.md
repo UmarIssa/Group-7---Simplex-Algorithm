@@ -46,7 +46,7 @@ cin >> numConstraints;
 • The user specifies the number of decision variables and constraints.
 • Example: For x1 and x2 , i.e numVariables = 2.
 
-
+---
 3. Simplex Table Construction
 Code snippet
 vector<vector<double>> table(numConstraints + 1, vector<double>(numVariables + numConstraints + 1, 0));
@@ -55,10 +55,11 @@ This creates a 2D matrix (Simplex Table) to store:
 • Coefficients of decision variables x1,x2,…
 • Slack variables s1,s2,…
 • The right-hand side (RHS) of constraints.
+
+--- 
  
- 
- 
-4. Fill the Table
+5. Fill the Table
+--
 Code snippet
 for (int i = 0; i < numConstraints; i++) {
    for (int j = 0; j <= numVariables; j++) {
@@ -75,8 +76,10 @@ for (int j = 1; j <= numVariables; j++) {
    table.back()[j] *= -1; // Convert to maximization form
 }
 • Input the objective function coefficients and store them in the last row (negated to suit the Simplex method).
+
+---
  
-5. Printing the Table
+6. Printing the Table
 Code snippet
 void printTable(const vector<vector<double>>& table) {
    for (const auto& row : table) {
@@ -89,10 +92,10 @@ void printTable(const vector<vector<double>>& table) {
  
 • Prints the simplex table neatly for debugging or understanding each step.
  
+--- 
  
  
- 
-6. Finding the Pivot Column
+7. Finding the Pivot Column
 Code Snippet
 int findPivotColumn(const vector<vector<double>>& table) {
    int pivotColumn = -1;
@@ -106,8 +109,9 @@ int findPivotColumn(const vector<vector<double>>& table) {
    return pivotColumn;
 }
 • The pivot column is the one with the most negative value in the last row (objective function). This indicates which variable can improve the solution.
- 
-7. Finding the Pivot Row
+
+ ---
+8. Finding the Pivot Row
 Code snippet
 int findPivotRow(const vector<vector<double>>& table, intpivotColumn) {
    int pivotRow = -1;
@@ -126,12 +130,12 @@ int findPivotRow(const vector<vector<double>>& table, intpivotColumn) {
  
 • The pivot row is determined by the minimum ratio test: RHS/Pivot Column Coefficient 
 • This ensures feasibility and avoids unbounded solutions.
+--- 
  
  
  
  
- 
-8. Performing Pivoting
+9. Performing Pivoting
 Code snippet
 void performPivoting(vector<vector<double>>& table, intpivotRow, int pivotColumn) {
    double pivotValue = table[pivotRow][pivotColumn];
@@ -149,7 +153,9 @@ void performPivoting(vector<vector<double>>& table, intpivotRow, int pivotColumn
    }
 }
 • This step normalizes the pivot row and adjusts the other rows to make the pivot column a unit column (Gaussian elimination).
-9. Simplex Iterations
+
+---
+11. Simplex Iterations
 Code snippet
 void simplex(vector<vector<double>>& table) {
    while (true) {
@@ -191,7 +197,7 @@ void simplex(vector<vector<double>>& table) {
 2. Performs pivoting.
 3. Stops when there are no negative values in the last row (optimal solution).
  
- 
+ ---
  
  
  
