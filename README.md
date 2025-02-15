@@ -177,11 +177,11 @@ GROUP MEMBERS
 
 U22CS1064
 ahmad-ig
-https://github.com/ahmad-ig
+https://github.com/ahmad-ig/Simplex-Algorithm
 
 U22cs1065 
 thebuhariii 
-https://github.com/thebuhariii
+https://github.com/thebuhariii/Group-7---simplex-algorithm-
 
 U22CS1070
 UmarIssa
@@ -193,4 +193,8 @@ https://github.com/Maryam876
 
 U22CS1069
 Big-Major
-https://github.com/Big-Major/
+https://github.com/Big-Major/Group-7---Simplex-algorithm-
+
+U22CS1068
+jerry
+https://github.com/U22cs1068/Group-7-Simplex-Algorithm-
