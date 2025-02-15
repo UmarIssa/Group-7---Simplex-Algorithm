@@ -1,4 +1,32 @@
 # Group-7---U22CS1070
+--- | ---
+GROUP MEMBERS 
+
+U22CS1064
+ahmad-ig
+https://github.com/ahmad-ig/Simplex-Algorithm
+
+U22cs1065 
+thebuhariii 
+https://github.com/thebuhariii/Group-7---simplex-algorithm-
+
+U22CS1070
+UmarIssa
+https://github.com/UmarIssa/Group-7---U22CS1070
+
+U22CS1062 
+Maryam876
+https://github.com/Maryam876/Group-7--simplex-algorithm-
+
+U22CS1069
+Big-Major
+https://github.com/Big-Major/Group-7---Simplex-algorithm-
+
+U22CS1068
+jerry
+https://github.com/U22cs1068/Group-7-Simplex-Algorithm-
+---
+
 This program lets you input the number of variables and constraints, followed by the coefficients of the constraints (including the right-hand side) and the objective function. It then performs the Simplex Algorithm to find the optimal solution.
 Purpose of the Code
 This program implements the Simplex Algorithm to solve a linear programming problem. It finds the maximum value of an objective function.
@@ -175,28 +203,4 @@ int main() {
 2. Construct the simplex table.
 3. Call the simplex function to solve.
   
-GROUP MEMBERS 
 
-U22CS1064
-ahmad-ig
-https://github.com/ahmad-ig/Simplex-Algorithm
-
-U22cs1065 
-thebuhariii 
-https://github.com/thebuhariii/Group-7---simplex-algorithm-
-
-U22CS1070
-UmarIssa
-https://github.com/UmarIssa/Group-7---U22CS1070
-
-U22CS1062 
-Maryam876
-https://github.com/Maryam876/Group-7--simplex-algorithm-
-
-U22CS1069
-Big-Major
-https://github.com/Big-Major/Group-7---Simplex-algorithm-
-
-U22CS1068
-jerry
-https://github.com/U22cs1068/Group-7-Simplex-Algorithm-
