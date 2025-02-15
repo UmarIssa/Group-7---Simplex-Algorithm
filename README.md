@@ -185,11 +185,11 @@ https://github.com/thebuhariii/Group-7---simplex-algorithm-
 
 U22CS1070
 UmarIssa
-https://github.com/UmarIssa
+https://github.com/UmarIssa/Group-7---U22CS1070
 
 U22CS1062 
 Maryam876
-https://github.com/Maryam876
+https://github.com/Maryam876/Group-7--simplex-algorithm-
 
 U22CS1069
 Big-Major
